@@ -1,0 +1,30 @@
+{
+"Admins":["76561198003418733" ],
+"ApiKey":"FEF44850B2D1F0C4078C5DDA6C1A0910",
+"mainLog": "syslog.log",
+"UseSeparateProcesses": "false",
+"AutoStartAllBots": "true",
+"Bots": [
+		 {
+            "Username":"bot1h1z1exchange",
+            "Password":"jumick29200",
+			"ApiKey":"FEF44850B2D1F0C4078C5DDA6C1A0910",
+            "DisplayName":"H1Z1ExBot",
+            "ChatResponse":"HYop Houston, I'm the bot for H1Z1Bingo.com!",
+			      "BotWebsiteURL":"https://francoistoquer.com/steam",
+			      "BotWebsiteName":"H1Z1 Bingo",
+			      "BotDBPassword":"gc4g1tkI5Bo0aWSfHkmiYI2QZODN",
+			      "ProfitAdmin":"76561198003418733",
+            "logFile": "TestBot.log",
+            "BotControlClass": "SteamBot.DepositTradeOfferUserHandler",
+            "MaximumTradeTime":180,
+            "MaximumActionGap":30,
+            "DisplayNamePrefix":"[AutomatedBot] ",
+            "TradePollingInterval":800,
+            "ConsoleLogLevel":"Success",
+            "FileLogLevel":"Info",
+            "AutoStart": "true",
+            "SchemaLang":"en"
+        }
+    ]
+}

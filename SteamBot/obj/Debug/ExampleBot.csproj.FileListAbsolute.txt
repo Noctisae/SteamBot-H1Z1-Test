@@ -1,0 +1,6 @@
+D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
+D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\Bin\Debug\SteamBot.exe.config
+D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\Bin\Debug\SteamBot.exe
+D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\Bin\Debug\SteamBot.pdb
+D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\obj\Debug\SteamBot.exe
+D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\obj\Debug\SteamBot.pdb
