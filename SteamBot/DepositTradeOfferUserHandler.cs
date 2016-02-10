@@ -298,6 +298,7 @@ namespace SteamBot
 
                                 JSONClass responseJsonObjPutItemsIn = JsonConvert.DeserializeObject<JSONClass>(responsePutItemsInString);
                                 jsonData = responseJsonObjPutItemsIn.data;
+                                Log.Success("Objets déserialisés");
                             }
                         });
 
@@ -335,7 +336,7 @@ namespace SteamBot
                             Log.Success("Winner steam id: " + winnerSteamIDString + ", token: " + winnerTradeToken);
 
                             //Get bot's inventory json
-                            string botInvUrl = "http://steamcommunity.com/profiles/" + Bot.SteamUser.SteamID.ConvertToUInt64() + "/inventory/json/295110/2";
+                            string botInvUrl = "http://steamcommunity.com/profiles/" + Bot.SteamUser.SteamID.ConvertToUInt64() + "/inventory/json/295110/1";
                             var botInvRequest = (HttpWebRequest)WebRequest.Create(botInvUrl);
                             var botInvResponse = (HttpWebResponse)botInvRequest.GetResponse();
                             string botInvString = new StreamReader(botInvResponse.GetResponseStream()).ReadToEnd();
@@ -546,7 +547,7 @@ namespace SteamBot
                 Log.Success("Winner steam id: " + winnerSteamIDString + ", token: " + winnerTradeToken);
 
                 //Get bot's inventory json
-                string botInvUrl = "http://steamcommunity.com/profiles/" + Bot.SteamUser.SteamID.ConvertToUInt64() + "/inventory/json/295110/2";
+                string botInvUrl = "http://steamcommunity.com/profiles/" + Bot.SteamUser.SteamID.ConvertToUInt64() + "/inventory/json/295110/1";
                 var botInvRequest = (HttpWebRequest)WebRequest.Create(botInvUrl);
                 var botInvResponse = (HttpWebResponse)botInvRequest.GetResponse();
                 string botInvString = new StreamReader(botInvResponse.GetResponseStream()).ReadToEnd();
