@@ -70,7 +70,7 @@ namespace SteamBot
                             if (invItem.instanceid != 519977179)
                             {
                                 var assetId = invItem.id;
-                                withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+                                withdrawTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
                             }
                         }
                     }
@@ -126,7 +126,7 @@ namespace SteamBot
                     {
 
                         var assetId = invItem.id;
-                        withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+                        withdrawTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
 
                     }
                 }
@@ -213,6 +213,7 @@ namespace SteamBot
 
                 if (shouldDecline)
                 {
+                    Log.Success("On refuse l'offre !");
                     doWebWithCatch(1, () =>
                     {
                         if (offer.Decline())
@@ -303,23 +304,29 @@ namespace SteamBot
                         });
 
                         //Check if it should start the timer
+                        Log.Success("On regarde si on démarre le timer");
                         if (jsonData.startTimer == 1)
                         {
                             //Check if the timer is already running.
                             if (!timerRunning)
                             {
+                                Log.Success("On démarre le timer");
                                 timer = new System.Timers.Timer();
                                 timer.Elapsed += new ElapsedEventHandler(timerEvent);
                                 timer.Interval = 1000;
                                 timer.Start();
 
                                 timerRunning = true;
+                                Log.Success("Le timer est démarré");
                             }
                         }
 
                         //Check if the pot is over
+                        Log.Success("On regarde si le pot est fini");
+
                         if (jsonData.potOver == 1)
                         {
+                            Log.Success("On stoppe le timer");
                             //End the timer
                             timerTime = 0;
                             timer.Stop();
@@ -380,7 +387,7 @@ namespace SteamBot
 
                                 //Log.Success ("Adding item to winner trade offer. Asset ID: " + assetId);
 
-                                winnerTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+                                winnerTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
                                 //Changed 730 to 295110 to handle H1Z1 Trade, not CSGO
                                 alreadyAddedToWinnerTrade.Add(assetId);
                             }
@@ -436,7 +443,7 @@ namespace SteamBot
 
                                 //Log.Success ("Adding item to winner trade offer. Asset ID: " + assetId);
 
-                                profitTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+                                profitTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
                                 alreadyAddedToProfitTrade.Add(assetId);
                             }
 
@@ -458,6 +465,8 @@ namespace SteamBot
                         }
                         else
                         {
+                            Log.Success("Erreur, on décline");
+                            Log.Success(responseJsonObj.errMsg);
                             //Only try this one time, because even if it gives an error, it still gets declined.
                             doWebWithCatch(1, () =>
                             {
@@ -591,7 +600,7 @@ namespace SteamBot
 
                     //Log.Success ("Adding item to winner trade offer. Asset ID: " + assetId);
 
-                    winnerTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+                    winnerTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
                     alreadyAddedToWinnerTrade.Add(assetId);
                 }
 
@@ -643,7 +652,7 @@ namespace SteamBot
 
                     //Log.Success ("Adding item to winner trade offer. Asset ID: " + assetId);
 
-                    profitTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+                    profitTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
                     alreadyAddedToProfitTrade.Add(assetId);
                 }
 
