@@ -9,4 +9,3 @@ D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\bin\Debug
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\bin\Debug\SteamKit2.xml
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\obj\Debug\SteamTrade.dll
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\obj\Debug\SteamTrade.pdb
-D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\obj\Debug\SteamTrade.csprojResolveAssemblyReference.cache

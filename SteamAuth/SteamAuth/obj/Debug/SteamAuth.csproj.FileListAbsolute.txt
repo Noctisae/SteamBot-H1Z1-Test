@@ -4,4 +4,3 @@ D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamAuth\SteamAuth\
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamAuth\SteamAuth\bin\Debug\Newtonsoft.Json.xml
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamAuth\SteamAuth\obj\Debug\SteamAuth.dll
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamAuth\SteamAuth\obj\Debug\SteamAuth.pdb
-D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamAuth\SteamAuth\obj\Debug\SteamAuth.csprojResolveAssemblyReference.cache

@@ -43,7 +43,6 @@ namespace SteamBot
 
                 var rgInventory = data.rgInventory;
                 var currentPot = data.currentPot;
-
                 var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Bot.ProfitAdmin));
 
                 foreach (var inventoryItemKeyVal in rgInventory)
@@ -70,7 +69,7 @@ namespace SteamBot
                             if (invItem.instanceid != 519977179)
                             {
                                 var assetId = invItem.id;
-                                withdrawTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
+                                withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
                             }
                         }
                     }
@@ -102,9 +101,7 @@ namespace SteamBot
 
                 var rgInventory = data.rgInventory;
                 var currentPot = data.currentPot;
-
-                var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Bot.ProfitAdmin));
-
+                var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Convert.ToUInt64(Bot.ProfitAdmin)));
                 foreach (var inventoryItemKeyVal in rgInventory)
                 {
                     var invItem = inventoryItemKeyVal.Value;
@@ -126,7 +123,7 @@ namespace SteamBot
                     {
 
                         var assetId = invItem.id;
-                        withdrawTradeOffer.Items.AddMyItem(295110, 1, assetId, 1);
+                        withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
 
                     }
                 }

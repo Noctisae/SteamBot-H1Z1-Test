@@ -202,10 +202,12 @@ namespace SteamTrade.TradeOffer
             data.Add("tradeoffermessage", message);
             data.Add("json_tradeoffer", JsonConvert.SerializeObject(status, JsonSerializerSettings));
             data.Add("trade_offer_create_params", "{}");
-
+            Console.WriteLine("Voici le JSON sur les objets a générer"+JsonConvert.SerializeObject(status, JsonSerializerSettings));
+            Console.WriteLine("Voici l'ID du partenaire d'échange : "+otherSteamId.ToString());
+            Console.WriteLine("Voici l'ID du partenaire d'échange converti : "+otherSteamId.ConvertToUInt64().ToString());
             string referer = string.Format("https://steamcommunity.com/tradeoffer/new/?partner={0}",
                 otherSteamId.AccountID);
-
+            Console.WriteLine(referer);
             return Request(SendUrl, data, referer, null, out newTradeOfferId);
         }
 
@@ -253,6 +255,7 @@ namespace SteamTrade.TradeOffer
                     if (!String.IsNullOrEmpty(offerResponse.TradeOfferId))
                     {
                         newTradeOfferId = offerResponse.TradeOfferId;
+                        Console.WriteLine("VOICI L ID DE TRADE GENERE !!!!!"+newTradeOfferId);
                         return true;
                     }
                     else
