@@ -57,7 +57,7 @@ namespace SteamBot
 
                 if (int.TryParse(xy[0], out index) && (index < manager.ConfigObject.Bots.Length))
                 {
-                    Console.WriteLine("Authing bot with '" + code + "'");
+                    // Console.WriteLine("Authing bot with '" + code + "'");
                     manager.AuthBot(index, code);
                 }
                 else if (!String.IsNullOrEmpty(xy[0]))
@@ -66,7 +66,7 @@ namespace SteamBot
                     {
                         if (manager.ConfigObject.Bots[index].Username.Equals(xy[0], StringComparison.CurrentCultureIgnoreCase))
                         {
-                            Console.WriteLine("Authing bot with '" + code + "'");
+                            // Console.WriteLine("Authing bot with '" + code + "'");
                             manager.AuthBot(index, code);
                         }
                     }
@@ -88,7 +88,7 @@ namespace SteamBot
 
             if (showHelp)
             {
-                Console.WriteLine("");
+                // Console.WriteLine("");
                 p.WriteOptionDescriptions(Console.Out);
             }
 
@@ -169,7 +169,7 @@ namespace SteamBot
 
             if (cs.Length < 2)
             {
-                Console.WriteLine("Error: No command given to be executed.");
+				Log.Error("Error: No command given to be executed.");
                 return;
             }
 
@@ -198,7 +198,7 @@ namespace SteamBot
                 }
             }
             // Print error
-            Console.WriteLine("Error: Bot " + cs[0] + " not found.");
+			Log.Error("Error: Bot " + cs[0] + " not found.");
         }
 
         private void InputCommand(string inpt)
@@ -209,7 +209,7 @@ namespace SteamBot
 
             if (cs.Length < 2)
             {
-                Console.WriteLine("Error: No input given.");
+				Log.Error("Error: No input given.");
                 return;
             }
 
@@ -238,7 +238,7 @@ namespace SteamBot
                 }
             }
             // Print error
-            Console.WriteLine("Error: Bot " + cs[0] + " not found.");
+			Log.Error("Error: Bot " + cs[0] + " not found.");
         }
 
         #region Nested Options classes

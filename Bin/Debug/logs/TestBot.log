@@ -1,2 +1,302 @@
 [TestBot 2016-01-20 15:25:48] INFO: Connecting...
 [TestBot 2016-01-20 15:25:48] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:15:28] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:15:28] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:16:53] ERROR: Mobile authenticator has already been linked!
+[H1Z1ExBot 2016-02-23 19:23:31] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:23:31] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:23:44] INTERFACE: Enter Steam Guard code from email (type "input [index] [code]"):
+[H1Z1ExBot 2016-02-23 19:24:21] ERROR: System.ObjectDisposedException: Le handle sécurisé a été fermé
+   à System.Runtime.InteropServices.SafeHandle.DangerousAddRef(Boolean& success)
+   à System.StubHelpers.StubHelpers.SafeHandleAddRef(SafeHandle pHandle, Boolean& success)
+   à Microsoft.Win32.Win32Native.SetEvent(SafeWaitHandle handle)
+   à System.Threading.EventWaitHandle.Set()
+   à System.Threading.CancellationTokenSource.NotifyCancellation(Boolean throwOnFirstException)
+   à SteamKit2.TcpConnection.Cleanup()
+   à SteamKit2.Internal.CMClient.Connect(IPEndPoint cmServer)
+   à SteamBot.Bot.<HandleSteamMessage>b__79_12(DisconnectedCallback callback) dans D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\Bot.cs:ligne 741
+   à SteamKit2.CallbackMsgExtensions.Handle[T](ICallbackMsg msg, Action`1 handler)
+   à SteamBot.Bot.HandleSteamMessage(ICallbackMsg msg) dans D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\Bot.cs:ligne 732
+   à SteamBot.Bot.BackgroundWorkerOnDoWork(Object sender, DoWorkEventArgs doWorkEventArgs) dans D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\Bot.cs:ligne 1221
+[H1Z1ExBot 2016-02-23 19:24:21] WARN: Restarting bot...
+[H1Z1ExBot 2016-02-23 19:30:42] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:30:42] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:30:51] ERROR: Error performing mobile login: GeneralFailure
+[H1Z1ExBot 2016-02-23 19:31:09] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:31:09] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:31:19] INTERFACE: Enter Steam Guard code from email (type "input [index] [code]"):
+[H1Z1ExBot 2016-02-23 19:31:38] ERROR: Error performing mobile login: GeneralFailure
+[H1Z1ExBot 2016-02-23 19:32:02] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:32:02] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:32:23] INTERFACE: Enter Steam Guard code from email (type "input [index] [code]"):
+[H1Z1ExBot 2016-02-23 19:32:50] INFO: Linking mobile authenticator...
+[H1Z1ExBot 2016-02-23 19:32:53] INTERFACE: Enter SMS code (type "input [index] [code]"):
+[H1Z1ExBot 2016-02-23 19:33:52] SUCCESS: Linked authenticator.
+[H1Z1ExBot 2016-02-23 19:34:26] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:34:26] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:36:14] ERROR: Unable to generate Steam Guard code.
+[H1Z1ExBot 2016-02-23 19:36:29] ERROR: Mobile authenticator has already been linked!
+[H1Z1ExBot 2016-02-23 19:39:34] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 19:39:34] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 19:39:45] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-02-23 19:39:46] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-02-23 19:40:04] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-02-23 19:40:04] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-02-23 19:40:04] INFO: Downloading Schema...
+[H1Z1ExBot 2016-02-23 19:40:05] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-02-23 19:40:05] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-02-23 22:01:38] INFO: Connecting...
+[H1Z1ExBot 2016-02-23 22:01:38] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-23 22:01:40] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-02-23 22:01:41] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-02-23 22:01:51] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-02-23 22:01:51] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-02-23 22:01:52] INFO: Downloading Schema...
+[H1Z1ExBot 2016-02-23 22:01:52] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-02-23 22:01:52] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-02-24 08:08:03] INFO: Connecting...
+[H1Z1ExBot 2016-02-24 08:08:03] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-24 08:08:04] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-02-24 08:08:06] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-02-24 08:08:11] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-02-24 08:08:11] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-02-24 08:08:11] INFO: Downloading Schema...
+[H1Z1ExBot 2016-02-24 08:08:12] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-02-24 08:08:12] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-02-24 09:02:14] INFO: Connecting...
+[H1Z1ExBot 2016-02-24 09:02:14] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-02-24 09:02:15] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-02-24 09:02:16] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-02-24 09:02:22] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-02-24 09:02:22] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-02-24 09:02:22] INFO: Downloading Schema...
+[H1Z1ExBot 2016-02-24 09:02:23] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-02-24 09:02:23] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 17:18:59] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 17:18:59] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 17:19:00] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 17:19:02] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 17:19:16] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 17:19:16] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 17:19:17] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 17:19:18] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 17:19:18] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 17:21:14] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 17:21:14] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 17:21:15] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 17:21:17] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 17:21:21] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 17:21:21] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 17:21:21] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 17:21:22] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 17:21:22] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 17:26:46] SUCCESS: Generated Steam Guard code: QNPKT
+[H1Z1ExBot 2016-03-10 17:31:42] SUCCESS: Generated Steam Guard code: 43TF3
+[H1Z1ExBot 2016-03-10 17:58:58] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 17:58:58] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 17:59:00] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 17:59:01] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 17:59:05] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 17:59:05] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 17:59:05] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 17:59:07] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 17:59:07] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:00:30] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:00:30] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:00:31] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:00:32] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:00:43] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:00:43] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:00:43] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:00:44] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:00:44] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:02:32] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:02:32] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:02:33] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:02:35] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:02:41] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:02:41] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:02:41] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:02:42] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:02:42] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:03:50] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:03:50] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:03:52] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:03:53] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:04:02] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:04:02] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:04:03] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:04:03] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:04:03] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:05:29] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:05:29] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:05:36] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:05:37] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:05:41] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:05:41] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:05:41] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:05:42] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:05:42] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:07:26] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:07:26] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:07:27] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:07:29] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:07:33] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:07:33] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:07:33] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:07:34] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:07:34] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:07:52] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:07:52] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:08:04] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:08:05] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:08:10] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:08:10] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:08:10] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:08:11] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:08:11] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:10:28] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:10:28] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:10:34] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:10:35] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:10:41] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:10:41] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:10:42] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:10:42] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:10:42] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:10:42] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:18:09] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:18:09] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:18:11] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:18:12] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:18:37] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:18:37] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:18:38] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:18:39] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:18:39] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:18:39] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:19:05] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:19:05] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:19:06] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:19:08] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:19:17] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:19:17] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:19:18] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:19:18] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:19:18] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:19:18] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:27:25] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:27:25] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:27:26] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:27:27] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:27:32] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:27:32] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:27:32] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:27:33] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:27:33] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:27:33] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:28:34] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:28:34] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:28:35] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:28:36] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:28:40] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:28:40] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:28:41] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:28:41] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:28:41] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:28:41] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:35:27] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:35:27] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:35:38] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:35:39] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:37:15] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:37:15] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:37:16] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:37:17] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:37:18] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:37:53] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:37:53] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:37:59] ERROR: Unable to generate Steam Guard code.
+[H1Z1ExBot 2016-03-10 18:38:04] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:06] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:12] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:14] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:25] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:26] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:28] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:29] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:41] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:42] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:38:44] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:05] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:07] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:08] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:10] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:22] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:24] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:35] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:47] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:39:59] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:05] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:07] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:28] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:30] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:31] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:33] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:34] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:46] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:47] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:40:54] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:00] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:07] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:09] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:10] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:12] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:28] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:30] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:46] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:41:47] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:42:08] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:42:16] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:42:30] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:42:30] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:42:37] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:42:38] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:42:44] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:42:44] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:42:44] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:42:45] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:42:45] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:42:45] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:46:00] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:46:00] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:46:02] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:46:03] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:46:22] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:46:22] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:46:24] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:47:40] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:47:40] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:48:11] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:48:38] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:48:41] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:48:43] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:48:54] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:49:01] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:49:02] ERROR: Login Error: ServiceUnavailable
+[H1Z1ExBot 2016-03-10 18:49:16] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:49:16] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:49:16] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:49:17] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:49:17] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:49:17] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-10 18:55:32] INFO: Connecting...
+[H1Z1ExBot 2016-03-10 18:55:33] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-10 18:55:34] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-10 18:55:35] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-10 18:55:42] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-10 18:55:42] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-10 18:55:43] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-10 18:55:43] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-10 18:55:43] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-10 18:55:43] SUCCESS: Launch event loop

@@ -10,6 +10,8 @@ using System.Net;
 using System.Text;
 using System.Timers;
 using TradeAsset = SteamTrade.TradeOffer.TradeOffer.TradeStatusUser.TradeAsset;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace SteamBot
 {
@@ -154,6 +156,10 @@ namespace SteamBot
             public IDictionary<string, inventoryItem> rgInventory;
             public List<inventoryItem> currentPot;
         }
+
+		public class ExchangeData {
+			public String ninja;
+		}
 
         public override void OnNewTradeOffer(TradeOffer offer)
         {
@@ -709,7 +715,24 @@ namespace SteamBot
 
         public override void OnFriendRemove() { }
 
-        public override void OnLoginCompleted() { }
+        public override void OnLoginCompleted() {
+			new Thread(() => {
+				Log.Success("Launch event loop");
+
+				var url = "http://localhost/~florentin/store/?url=/bot/exchange";
+				while( true ) {
+					var res = SteamWeb.Request( url, "GET" );
+
+					string withdrawString = new StreamReader(res.GetResponseStream()).ReadToEnd();
+
+					var data = JsonConvert.DeserializeObject<ExchangeData>(withdrawString);
+
+					Console.WriteLine( data.ninja );
+
+					Thread.Sleep( 60000 );
+				}
+			}).Start();
+		}
 
         public override bool OnTradeRequest() { return false; }
 
