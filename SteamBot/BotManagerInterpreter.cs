@@ -169,7 +169,7 @@ namespace SteamBot
 
             if (cs.Length < 2)
             {
-				Log.Error("Error: No command given to be executed.");
+				Console.WriteLine("Error: No command given to be executed.");
                 return;
             }
 
@@ -198,7 +198,7 @@ namespace SteamBot
                 }
             }
             // Print error
-			Log.Error("Error: Bot " + cs[0] + " not found.");
+			Console.WriteLine("Error: Bot " + cs[0] + " not found.");
         }
 
         private void InputCommand(string inpt)
@@ -209,7 +209,7 @@ namespace SteamBot
 
             if (cs.Length < 2)
             {
-				Log.Error("Error: No input given.");
+				Console.WriteLine("Error: No input given.");
                 return;
             }
 
@@ -238,7 +238,7 @@ namespace SteamBot
                 }
             }
             // Print error
-			Log.Error("Error: Bot " + cs[0] + " not found.");
+			Console.WriteLine("Error: Bot " + cs[0] + " not found.");
         }
 
         #region Nested Options classes

@@ -9,3 +9,15 @@ D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\bin\Debug
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\bin\Debug\SteamKit2.xml
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\obj\Debug\SteamTrade.dll
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamTrade\obj\Debug\SteamTrade.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\SteamTrade.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\SteamTrade.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\Newtonsoft.Json.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\protobuf-net.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\SteamKit2.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\protobuf-net.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\protobuf-net.xml
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\SteamKit2.xml
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\bin\Debug\Newtonsoft.Json.xml
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\obj\Debug\SteamTrade.csprojResolveAssemblyReference.cache
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\obj\Debug\SteamTrade.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamTrade\obj\Debug\SteamTrade.pdb

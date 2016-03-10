@@ -4,3 +4,9 @@ D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\Bin\Debug\SteamBot.e
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\Bin\Debug\SteamBot.pdb
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\obj\Debug\SteamBot.exe
 D:\wamp\www\Site Capisen H1Z1Bet\CSGOWinBig-SteamBot-master\SteamBot\obj\Debug\SteamBot.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamBot\obj\Debug\ExampleBot.csprojResolveAssemblyReference.cache
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamBot\obj\Debug\SteamBot.exe
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamBot\obj\Debug\SteamBot.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\Bin\Debug\SteamBot.exe.config
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\Bin\Debug\SteamBot.exe
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\Bin\Debug\SteamBot.pdb
