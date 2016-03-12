@@ -31,117 +31,117 @@ namespace SteamBot
                     Log.Success("All trade offers confirmed... on bot: " + Bot.SteamUser.SteamID.ConvertToUInt64());
                 }
             }
-            if (command.Equals("skins"))
-            {
-                //Get current pot and all items in inventory
-                string withdrawUrl = Bot.BotWebsiteURL + "/php/bot-withdraw.php";
-                var withdrawRequest = (HttpWebRequest)WebRequest.Create(withdrawUrl);
-                var withdrawResponse = (HttpWebResponse)withdrawRequest.GetResponse();
-                string withdrawString = new StreamReader(withdrawResponse.GetResponseStream()).ReadToEnd();
-
-                WithdrawResponse botInventory = JsonConvert.DeserializeObject<WithdrawResponse>(withdrawString);
-
-                var data = botInventory.data;
-
-                var rgInventory = data.rgInventory;
-                var currentPot = data.currentPot;
-                var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Bot.ProfitAdmin));
-
-                foreach (var inventoryItemKeyVal in rgInventory)
-                {
-                    var invItem = inventoryItemKeyVal.Value;
-                    long classId = invItem.classid, instanceId = invItem.instanceid;
-
-                    bool withdrawThisItem = true;
-                    //Check to see if this item is in the current pot
-                    foreach (var potItem in currentPot)
-                    {
-                        long classIdPot = potItem.classid, instanceIdPot = potItem.instanceid;
-
-                        if (classId == classIdPot && instanceId == instanceIdPot)
-                        {
-                            withdrawThisItem = false;
-                        }
-                    }
-
-                    if (withdrawThisItem)
-                    {
-                        if (invItem.instanceid != 0)
-                        {
-                            if (invItem.instanceid != 519977179)
-                            {
-                                var assetId = invItem.id;
-                                withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
-                            }
-                        }
-                    }
-                }
-
-                if (withdrawTradeOffer.Items.GetMyItems().Count != 0)
-                {
-                    string withdrawOfferId;
-                    withdrawTradeOffer.Send(out withdrawOfferId, "Here are the withdraw items requested.");
-                    Bot.AcceptAllMobileTradeConfirmations();
-                    Log.Success("Withdraw trade offer sent. Offer ID: " + withdrawOfferId);
-                }
-                else
-                {
-                    Log.Error("There are no profit items to withdraw at this time.");
-                }
-            }
-            if (command.Equals("withdraw"))
-            {
-                //Get current pot and all items in inventory
-                string withdrawUrl = Bot.BotWebsiteURL + "/php/bot-withdraw.php";
-                var withdrawRequest = (HttpWebRequest)WebRequest.Create(withdrawUrl);
-                var withdrawResponse = (HttpWebResponse)withdrawRequest.GetResponse();
-                string withdrawString = new StreamReader(withdrawResponse.GetResponseStream()).ReadToEnd();
-
-                WithdrawResponse botInventory = JsonConvert.DeserializeObject<WithdrawResponse>(withdrawString);
-
-                var data = botInventory.data;
-
-                var rgInventory = data.rgInventory;
-                var currentPot = data.currentPot;
-                var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Convert.ToUInt64(Bot.ProfitAdmin)));
-                foreach (var inventoryItemKeyVal in rgInventory)
-                {
-                    var invItem = inventoryItemKeyVal.Value;
-                    long classId = invItem.classid, instanceId = invItem.instanceid;
-
-                    bool withdrawThisItem = true;
-                    //Check to see if this item is in the current pot
-                    foreach (var potItem in currentPot)
-                    {
-                        long classIdPot = potItem.classid, instanceIdPot = potItem.instanceid;
-
-                        if (classId == classIdPot && instanceId == instanceIdPot)
-                        {
-                            withdrawThisItem = false;
-                        }
-                    }
-
-                    if (withdrawThisItem)
-                    {
-
-                        var assetId = invItem.id;
-                        withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
-
-                    }
-                }
-
-                if (withdrawTradeOffer.Items.GetMyItems().Count != 0)
-                {
-                    string withdrawOfferId;
-                    withdrawTradeOffer.Send(out withdrawOfferId, "Here are the withdraw items requested.");
-                    Bot.AcceptAllMobileTradeConfirmations();
-                    Log.Success("Withdraw trade offer sent. Offer ID: " + withdrawOfferId);
-                }
-                else
-                {
-                    Log.Error("There are no profit items to withdraw at this time.");
-                }
-            }
+            // if (command.Equals("skins"))
+            // {
+            //     //Get current pot and all items in inventory
+            //     string withdrawUrl = Bot.BotWebsiteURL + "/php/bot-withdraw.php";
+            //     var withdrawRequest = (HttpWebRequest)WebRequest.Create(withdrawUrl);
+            //     var withdrawResponse = (HttpWebResponse)withdrawRequest.GetResponse();
+            //     string withdrawString = new StreamReader(withdrawResponse.GetResponseStream()).ReadToEnd();
+            //
+            //     WithdrawResponse botInventory = JsonConvert.DeserializeObject<WithdrawResponse>(withdrawString);
+            //
+            //     var data = botInventory.data;
+            //
+            //     var rgInventory = data.rgInventory;
+            //     var currentPot = data.currentPot;
+            //     var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Bot.ProfitAdmin));
+            //
+            //     foreach (var inventoryItemKeyVal in rgInventory)
+            //     {
+            //         var invItem = inventoryItemKeyVal.Value;
+            //         long classId = invItem.classid, instanceId = invItem.instanceid;
+            //
+            //         bool withdrawThisItem = true;
+            //         //Check to see if this item is in the current pot
+            //         foreach (var potItem in currentPot)
+            //         {
+            //             long classIdPot = potItem.classid, instanceIdPot = potItem.instanceid;
+            //
+            //             if (classId == classIdPot && instanceId == instanceIdPot)
+            //             {
+            //                 withdrawThisItem = false;
+            //             }
+            //         }
+            //
+            //         if (withdrawThisItem)
+            //         {
+            //             if (invItem.instanceid != 0)
+            //             {
+            //                 if (invItem.instanceid != 519977179)
+            //                 {
+            //                     var assetId = invItem.id;
+            //                     withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+            //                 }
+            //             }
+            //         }
+            //     }
+            //
+            //     if (withdrawTradeOffer.Items.GetMyItems().Count != 0)
+            //     {
+            //         string withdrawOfferId;
+            //         withdrawTradeOffer.Send(out withdrawOfferId, "Here are the withdraw items requested.");
+            //         Bot.AcceptAllMobileTradeConfirmations();
+            //         Log.Success("Withdraw trade offer sent. Offer ID: " + withdrawOfferId);
+            //     }
+            //     else
+            //     {
+            //         Log.Error("There are no profit items to withdraw at this time.");
+            //     }
+            // }
+            // if (command.Equals("withdraw"))
+            // {
+            //     //Get current pot and all items in inventory
+            //     string withdrawUrl = Bot.BotWebsiteURL + "/php/bot-withdraw.php";
+            //     var withdrawRequest = (HttpWebRequest)WebRequest.Create(withdrawUrl);
+            //     var withdrawResponse = (HttpWebResponse)withdrawRequest.GetResponse();
+            //     string withdrawString = new StreamReader(withdrawResponse.GetResponseStream()).ReadToEnd();
+            //
+            //     WithdrawResponse botInventory = JsonConvert.DeserializeObject<WithdrawResponse>(withdrawString);
+            //
+            //     var data = botInventory.data;
+            //
+            //     var rgInventory = data.rgInventory;
+            //     var currentPot = data.currentPot;
+            //     var withdrawTradeOffer = Bot.NewTradeOffer(new SteamID(Convert.ToUInt64(Bot.ProfitAdmin)));
+            //     foreach (var inventoryItemKeyVal in rgInventory)
+            //     {
+            //         var invItem = inventoryItemKeyVal.Value;
+            //         long classId = invItem.classid, instanceId = invItem.instanceid;
+            //
+            //         bool withdrawThisItem = true;
+            //         //Check to see if this item is in the current pot
+            //         foreach (var potItem in currentPot)
+            //         {
+            //             long classIdPot = potItem.classid, instanceIdPot = potItem.instanceid;
+            //
+            //             if (classId == classIdPot && instanceId == instanceIdPot)
+            //             {
+            //                 withdrawThisItem = false;
+            //             }
+            //         }
+            //
+            //         if (withdrawThisItem)
+            //         {
+            //
+            //             var assetId = invItem.id;
+            //             withdrawTradeOffer.Items.AddMyItem(295110, 2, assetId, 1);
+            //
+            //         }
+            //     }
+            //
+            //     if (withdrawTradeOffer.Items.GetMyItems().Count != 0)
+            //     {
+            //         string withdrawOfferId;
+            //         withdrawTradeOffer.Send(out withdrawOfferId, "Here are the withdraw items requested.");
+            //         Bot.AcceptAllMobileTradeConfirmations();
+            //         Log.Success("Withdraw trade offer sent. Offer ID: " + withdrawOfferId);
+            //     }
+            //     else
+            //     {
+            //         Log.Error("There are no profit items to withdraw at this time.");
+            //     }
+            // }
         }
 
         public class WithdrawResponse
