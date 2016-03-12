@@ -730,28 +730,23 @@ namespace SteamBot
 
         public override void OnLoginCompleted() {
 			new Thread(() => {
-				Log.Success("Launch event loop");
+				var url = String.Format( "http://localhost/~florentin/store/?url=/bot/{0}/exchange/get", Bot.BotID );
 
-				var url = "http://localhost/~florentin/store/?url=/bot/exchange";
 				while( true ) {
-					var res = SteamWeb.Request( url, "GET" );
+					var res 		   = SteamWeb.Request( url, "GET" );
+					var withdrawString = new StreamReader(res.GetResponseStream()).ReadToEnd();
+					var data           = JsonConvert.DeserializeObject<ExchangeDataList>(withdrawString);
 
-					string withdrawString = new StreamReader(res.GetResponseStream()).ReadToEnd();
+					foreach( var exchange in data.data ){
+						var TradeOffer = Bot.NewTradeOffer( new SteamID( exchange.steamid ));
 
-					var data = JsonConvert.DeserializeObject<ExchangeDataList>(withdrawString);
-
-					//Console.WriteLine( data.ninja );
-
-					foreach( var exchange in data.data){
-
-						var TradeOffer = Bot.NewTradeOffer(new SteamID(exchange.steamid));
-						foreach(var obj in exchange.objects){
-							var assetid = obj.assetid;
-							var appid = obj.appid;
-							TradeOffer .Items.AddMyItem(appid,2,assetid,1);
+						foreach( var obj in exchange.objects ) {
+							TradeOffer.Items.AddMyItem( obj.appid, 3, obj.assetid, 1 );
 						}
+
 						string OfferID;
 						TradeOffer.Send(out OfferID, "Offre envoyée");
+
 						Bot.AcceptAllMobileTradeConfirmations();
 					}
 

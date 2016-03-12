@@ -300,3 +300,89 @@
 [H1Z1ExBot 2016-03-10 18:55:43] SUCCESS: Schema Downloaded!
 [H1Z1ExBot 2016-03-10 18:55:43] SUCCESS: Steam Bot Logged In Completely!
 [H1Z1ExBot 2016-03-10 18:55:43] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:37:48] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:37:48] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:38:05] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:38:06] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:38:17] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:38:17] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:38:18] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:38:18] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:38:18] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:38:18] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:39:21] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:39:21] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:39:23] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:39:24] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:39:30] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:39:30] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:39:31] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:39:31] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:39:31] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:39:31] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:41:00] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:41:00] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:41:12] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:41:13] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:41:28] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:41:28] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:41:29] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:41:29] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:41:29] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:41:29] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:43:14] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:43:14] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:43:16] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:43:17] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:43:23] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:43:23] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:43:23] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:43:24] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:43:24] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:43:24] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:43:24] SUCCESS: http://localhost/~florentin/store/?url=/bot/%d/exchange/get
+[H1Z1ExBot 2016-03-12 17:43:24] SUCCESS: Finish foreach
+[H1Z1ExBot 2016-03-12 17:44:33] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:44:33] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:44:40] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:44:42] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:44:52] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:44:52] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:44:58] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:44:58] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:44:58] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:44:58] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:44:58] SUCCESS: http://localhost/~florentin/store/?url=/bot/76561198274233189/exchange/get
+[H1Z1ExBot 2016-03-12 17:46:00] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:46:00] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:46:03] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:46:04] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:46:10] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:46:10] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:46:10] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:46:11] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:46:11] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:46:11] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:46:11] SUCCESS: http://localhost/~florentin/store/?url=/bot/76561198274233189/exchange/get
+[H1Z1ExBot 2016-03-12 17:46:44] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:46:44] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:46:46] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:46:47] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:46:56] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:46:56] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:46:57] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:46:57] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:46:57] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:46:57] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:46:57] SUCCESS: http://localhost/~florentin/store/?url=/bot/76561198274233189/exchange/get
+[H1Z1ExBot 2016-03-12 17:47:11] INFO: Connecting...
+[H1Z1ExBot 2016-03-12 17:47:11] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-12 17:47:18] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-12 17:47:19] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-12 17:47:39] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-12 17:47:39] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-12 17:47:39] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: Launch event loop
+[H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: http://localhost/~florentin/store/?url=/bot/76561198274233189/exchange/get
