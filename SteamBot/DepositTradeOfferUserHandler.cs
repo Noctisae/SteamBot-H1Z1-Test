@@ -157,9 +157,22 @@ namespace SteamBot
             public List<inventoryItem> currentPot;
         }
 
-		public class ExchangeData {
-			public String ninja;
+		public class ExchangeDataList {
+			public List<ExchangeData> data;
 		}
+
+
+		public class Objects {
+			public long assetid;
+			public int appid;
+		}
+
+		public class ExchangeData {
+			public ulong steamid;
+			public List<Objects> objects;
+		}
+
+
 
         public override void OnNewTradeOffer(TradeOffer offer)
         {
@@ -200,7 +213,7 @@ namespace SteamBot
                 //Check to make sure all items are for H1Z1.
                 foreach (TradeAsset item in theirItems)
                 {
-					if (item.AppId != 295110 || item.AppId != 433850)
+					if (item.AppId != 295110 && item.AppId != 433850)
                     {
                         shouldDecline = true;
                         Log.Error("Offer declined because one or more items was not for H1Z1.");
@@ -725,9 +738,22 @@ namespace SteamBot
 
 					string withdrawString = new StreamReader(res.GetResponseStream()).ReadToEnd();
 
-					var data = JsonConvert.DeserializeObject<ExchangeData>(withdrawString);
+					var data = JsonConvert.DeserializeObject<ExchangeDataList>(withdrawString);
 
-					Console.WriteLine( data.ninja );
+					//Console.WriteLine( data.ninja );
+
+					foreach( var exchange in data.data){
+
+						var TradeOffer = Bot.NewTradeOffer(new SteamID(exchange.steamid));
+						foreach(var obj in exchange.objects){
+							var assetid = obj.assetid;
+							var appid = obj.appid;
+							TradeOffer .Items.AddMyItem(appid,2,assetid,1);
+						}
+						string OfferID;
+						TradeOffer.Send(out OfferID, "Offre envoyée");
+						Bot.AcceptAllMobileTradeConfirmations();
+					}
 
 					Thread.Sleep( 60000 );
 				}
