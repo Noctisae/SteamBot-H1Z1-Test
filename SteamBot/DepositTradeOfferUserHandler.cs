@@ -19,7 +19,7 @@ namespace SteamBot
     {
         public DepositTradeOfferUserHandler(Bot bot, SteamID sid) : base(bot, sid) { }
 
-        System.Timers.Timer timer;
+        //System.Timers.Timer timer;
 
         public override void OnBotCommand(string command)
         {
