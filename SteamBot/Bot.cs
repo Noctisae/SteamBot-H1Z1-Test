@@ -51,6 +51,10 @@ namespace SteamBot
         /// Userhandler class bot is running.
         /// </summary>
         public readonly string BotControlClass;
+		/// <summary>
+		/// Steam ID 64 of the bot.
+		/// </summary>
+		public readonly ulong BotID;
         /// <summary>
         /// The display name of bot to steam.
         /// </summary>
@@ -168,6 +172,7 @@ namespace SteamBot
             BotWebsiteURL = config.BotWebsiteURL;
             BotWebsiteName = config.BotWebsiteName;
             BotDBPassword = config.BotDBPassword;
+			BotID = config.BotID;
             ProfitAdmin = config.ProfitAdmin;
             MaximumTradeTime = config.MaximumTradeTime;
             MaximumActionGap = config.MaximumActionGap;
