@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using SteamKit2;
 using System;
+using System.Web.UI.WebControls;
 
 namespace SteamTrade.TradeOffer
 {
@@ -110,25 +111,25 @@ namespace SteamTrade.TradeOffer
 
         public bool GetOffers()
         {
-            Console.WriteLine("Fetching offers...");
+			//Console.WriteLine("Fetching offers...");
             if (LastTimeCheckedOffers != 0)
             {
-                Console.WriteLine("Offers already checked before, rechecking to be sure...");
+                //Console.WriteLine("Offers already checked before, rechecking to be sure...");
                 bool action = GetTradeOffersSince(LastTimeCheckedOffers);
 
                 if (action)
                     LastTimeCheckedOffers = GetUnixTimeStamp();
-                Console.WriteLine("Returning offers checked.");
+                //Console.WriteLine("Returning offers checked.");
                 return action;
             }
             else
             {
-                Console.WriteLine("Checking Trade Offers for the first time ever...");
+                //Console.WriteLine("Checking Trade Offers for the first time ever...");
                 bool action = GetActiveTradeOffers();
                 if (action)
                     LastTimeCheckedOffers = GetUnixTimeStamp();
-                Console.WriteLine("Returning the offers for the first time...");
-                Console.WriteLine(action);
+                //Console.WriteLine("Returning the offers for the first time...");
+                //Console.WriteLine(action);
                 return action;
             }
         }

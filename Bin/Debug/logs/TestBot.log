@@ -386,3 +386,31 @@
 [H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: Steam Bot Logged In Completely!
 [H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: Launch event loop
 [H1Z1ExBot 2016-03-12 17:47:40] SUCCESS: http://localhost/~florentin/store/?url=/bot/76561198274233189/exchange/get
+[H1Z1ExBot 2016-03-13 19:31:28] INFO: Connecting...
+[H1Z1ExBot 2016-03-13 19:31:28] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-13 19:31:30] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-13 19:31:31] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-13 19:31:39] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-13 19:31:39] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-13 19:31:40] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-13 19:31:40] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-13 19:31:40] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-13 19:31:42] ERROR: Steam API error encountered. Trying again. Tries: 1 - ProtocolError
+[H1Z1ExBot 2016-03-13 19:31:43] ERROR: Tried total number of tries, giving up.
+[H1Z1ExBot 2016-03-13 19:32:43] ERROR: Steam API error encountered. Trying again. Tries: 1 - ProtocolError
+[H1Z1ExBot 2016-03-13 19:32:44] ERROR: Tried total number of tries, giving up.
+[H1Z1ExBot 2016-03-13 19:33:44] ERROR: Steam API error encountered. Trying again. Tries: 1 - ProtocolError
+[H1Z1ExBot 2016-03-13 19:33:45] ERROR: Tried total number of tries, giving up.
+[H1Z1ExBot 2016-03-13 19:34:44] ERROR: Steam API error encountered. Trying again. Tries: 1 - ProtocolError
+[H1Z1ExBot 2016-03-13 19:34:45] ERROR: Tried total number of tries, giving up.
+[H1Z1ExBot 2016-03-13 19:35:07] INFO: Connecting...
+[H1Z1ExBot 2016-03-13 19:35:07] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-13 19:35:24] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-13 19:35:25] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-13 19:35:41] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-13 19:35:41] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-13 19:35:41] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-13 19:35:42] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-13 19:35:42] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-03-13 19:35:43] ERROR: Steam API error encountered. Trying again. Tries: 1 - ProtocolError
+[H1Z1ExBot 2016-03-13 19:35:44] ERROR: Tried total number of tries, giving up.
