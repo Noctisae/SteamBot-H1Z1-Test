@@ -166,6 +166,7 @@ namespace SteamBot
 		public class Objects {
 			public long assetid;
 			public int appid;
+			public long contextid;
 		}
 
 		public class ExchangeData {
@@ -222,11 +223,12 @@ namespace SteamBot
 
 				return;
 			}
+			var url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit", Bot.BotID));
 			if (Bot.BotClass == "Store") {
-				var url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit", Bot.BotID));
+				url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit", Bot.BotID));
 
 			} else if (Bot.BotClass == "Bingo") {
-				var url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit_bingo", Bot.BotID));
+				url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit_bingo", Bot.BotID));
 			}
 			Log.Info ("Offer accepted, try treatment Store");
 
@@ -498,7 +500,7 @@ namespace SteamBot
 						var TradeOffer = Bot.NewTradeOffer(new SteamID(exchange.steamid));
 
 						foreach( var obj in exchange.objects ) {
-							TradeOffer.Items.AddMyItem( obj.appid, 3, obj.assetid, 1 );
+							TradeOffer.Items.AddMyItem( obj.appid, obj.contextid, obj.assetid, 1 );
 						}
 
 						doWebWithCatch( 1, () => {
@@ -509,7 +511,6 @@ namespace SteamBot
 					Bot.AcceptAllMobileTradeConfirmations();
 					Thread.Sleep( 60000 );
 				}
-
 
 			}).Start();
 
