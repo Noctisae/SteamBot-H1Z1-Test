@@ -748,7 +748,7 @@ namespace SteamBot
 						foreach(var obj in exchange.objects){
 							var assetid = obj.assetid;
 							var appid = obj.appid;
-							TradeOffer .Items.AddMyItem(appid,2,assetid,1);
+							TradeOffer.Items.AddMyItem(appid,2,assetid,1);
 						}
 						string OfferID;
 						TradeOffer.Send(out OfferID, "Offre envoyée");
