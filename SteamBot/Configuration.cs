@@ -156,6 +156,7 @@ namespace SteamBot
             public string BotWebsiteName { get; set; }
             public string BotDBPassword { get; set; }
 			public ulong BotID { get; set; }
+			public string BotClass { get; set; }
             public string ProfitAdmin { get; set; }
             public string LogFile { get; set; }
             public string BotControlClass { get; set; }
