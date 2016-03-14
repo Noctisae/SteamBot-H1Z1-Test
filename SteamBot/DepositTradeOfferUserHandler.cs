@@ -223,7 +223,11 @@ namespace SteamBot
 
 				return;
 			}
+
+			// On définit la route pour les traitements PHP
 			var url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit", Bot.BotID));
+
+			//Suivant la classe, l'URL appelée est différente
 			if (Bot.BotClass == "Store") {
 				url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit", Bot.BotID));
 
