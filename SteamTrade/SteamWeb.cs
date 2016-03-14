@@ -47,8 +47,8 @@ namespace SteamTrade
             {
                 url += (url.Contains("?") ? "&" : "?") + dataString;
             }
-            Console.WriteLine("Voila le dataString envoyé : "+dataString);
-            Console.WriteLine(url);
+            //Console.WriteLine("Voila le dataString envoyé : "+dataString);
+            //Console.WriteLine(url);
             //Setup the request
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = method;

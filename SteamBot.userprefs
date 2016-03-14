@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="SteamBot\ExampleBot.csproj">
+﻿<Properties StartupItem="SteamBot/ExampleBot.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SteamTrade\TradeOffer\TradeOffer.cs">
     <Files>
