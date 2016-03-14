@@ -485,8 +485,6 @@ namespace SteamBot
         public override void OnFriendRemove() { }
 
         public override void OnLoginCompleted() {
-			Bot.AcceptAllMobileTradeConfirmations();
-
 			new Thread(() => {
 				var url = Util.rewriteUrl( Bot.BotWebsiteURL, String.Format( "/bot/{0}/exchange/get", Bot.BotID ));
 
@@ -508,9 +506,13 @@ namespace SteamBot
 							TradeOffer.Send( out OfferID, "Offre envoyée" );
 						});
 					}
+					Bot.AcceptAllMobileTradeConfirmations();
 					Thread.Sleep( 60000 );
 				}
+
+
 			}).Start();
+
 		}
 
         public override bool OnTradeRequest() { return false; }
