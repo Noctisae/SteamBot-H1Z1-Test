@@ -161,8 +161,7 @@ namespace SteamBot
 		public class ExchangeDataList {
 			public List<ExchangeData> data;
 		}
-
-
+			
 		public class Objects {
 			public long assetid;
 			public int appid;
@@ -490,7 +489,7 @@ namespace SteamBot
 					var withdrawString = new StreamReader( res.GetResponseStream()).ReadToEnd();
 					var data           = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
 
-					foreach( var exchange in data.data ){
+					foreach( var exchange in data.data ) {
 						var TradeOffer = Bot.NewTradeOffer( new SteamID( exchange.steamid ));
 
 						foreach( var obj in exchange.objects ) {
