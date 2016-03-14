@@ -222,42 +222,48 @@ namespace SteamBot
 
 				return;
 			}
+			if( Bot.BotClass == "Store" ){
+				
+				Log.Info ("Offer accepted, try treatment");
 
-			Log.Info( "Offer accepted, try treatment" );
+				var data = "data={" + String.Format ("\"owner\": {0}, \"items\": {1}", offer.PartnerSteamId, JsonConvert.SerializeObject (offer.Items.GetTheirItems ())) + "}";
+				var url = Util.rewriteUrl (Bot.BotWebsiteURL, String.Format ("/bot/{0}/deposit", Bot.BotID));
+				var post = Encoding.UTF8.GetBytes (data);
+				var request = WebRequest.Create (url);
+				request.Method = "POST";
+				request.ContentType = "application/x-www-form-urlencoded";
+				request.ContentLength = post.Length;
 
-			var data    = "data={" + String.Format( "\"owner\": {0}, \"items\": {1}", offer.PartnerSteamId, JsonConvert.SerializeObject( offer.Items.GetTheirItems())) + "}";
-			var url     = Util.rewriteUrl( Bot.BotWebsiteURL, String.Format( "/bot/{0}/deposit", Bot.BotID ));
-			var post    = Encoding.UTF8.GetBytes( data );
-			var request = WebRequest.Create( url );
-				request.Method 		  = "POST";
-				request.ContentType   = "application/x-www-form-urlencoded";
-				request.ContentLength = post.Length ;
+				using (var stream = request.GetRequestStream ()) {
+					stream.Write (post, 0, post.Length);
+				}
 
-			using( var stream = request.GetRequestStream()) {
-				stream.Write( post, 0, post.Length );
+				var response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
+
+				doWebWithCatch (1, () => {
+					if (response.success) {
+						Log.Success ("Deposit");
+
+						if (offer.Accept ()) {
+							Log.Success ("Offer accepted");
+						} else {
+							Log.Error ("Offer accepted");
+						}
+					} else {
+						Log.Error ("Deposit");
+
+						if (offer.Decline ()) {
+							Log.Success ("Decline offer, cannot deposit");
+						} else {
+							Log.Error ("Decline offer, cannot deposit");
+						}
+					}	
+				});
+			} 
+			else if( Bot.BotClass == "Bingo" ){
+				
+
 			}
-
-			var response = JsonConvert.DeserializeObject<JSONBasicResponse>( new StreamReader( request.GetResponse().GetResponseStream()).ReadToEnd());
-
-			doWebWithCatch( 1, () => {
-				if( response.success ) {
-					Log.Success( "Deposit" );
-
-					if( offer.Accept()) {
-						Log.Success( "Offer accepted" );
-					} else {
-						Log.Error( "Offer accepted" );
-					}
-				} else {
-					Log.Error( "Deposit" );
-
-					if( offer.Decline()) {
-						Log.Success( "Decline offer, cannot deposit" );
-					} else {
-						Log.Error( "Decline offer, cannot deposit" );
-					}
-				}	
-			});
 		}
 
         // //Timer stuff
@@ -490,15 +496,10 @@ namespace SteamBot
 					var withdrawString = new StreamReader( res.GetResponseStream()).ReadToEnd();
 					var data           = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
 
-					foreach( var exchange in data.data ){
-						var TradeOffer = Bot.NewTradeOffer( new SteamID( exchange.steamid ));
-					var data = JsonConvert.DeserializeObject<ExchangeDataList>(withdrawString);
-
-					//Console.WriteLine( data.ninja );
-
 					foreach( var exchange in data.data){
 
 						var TradeOffer = Bot.NewTradeOffer(new SteamID(exchange.steamid));
+
 						foreach( var obj in exchange.objects ) {
 							TradeOffer.Items.AddMyItem( obj.appid, 3, obj.assetid, 1 );
 						}
@@ -508,7 +509,6 @@ namespace SteamBot
 							TradeOffer.Send( out OfferID, "Offre envoyée" );
 						});
 					}
-
 					Thread.Sleep( 60000 );
 				}
 			}).Start();

@@ -58,7 +58,7 @@ namespace SteamBot
 		/// <summary>
 		/// Class of the bot for treatments.
 		/// </summary>
-		public readonly ulong BotClass;
+		public readonly string BotClass;
         /// <summary>
         /// The display name of bot to steam.
         /// </summary>
