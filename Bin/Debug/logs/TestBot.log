@@ -753,3 +753,16 @@
 [H1Z1ExBot 2016-03-14 18:38:52] ERROR: Tried total number of tries, giving up.
 [H1Z1ExBot 2016-03-14 18:39:53] ERROR: Steam API error encountered. Trying again. Tries: 1 - ProtocolError
 [H1Z1ExBot 2016-03-14 18:39:54] ERROR: Tried total number of tries, giving up.
+[H1Z1ExBot 2016-03-14 18:57:45] INFO: Connecting...
+[H1Z1ExBot 2016-03-14 18:57:45] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-14 18:57:55] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-14 18:57:58] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-14 18:58:50] INFO: Connecting...
+[H1Z1ExBot 2016-03-14 18:58:50] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-14 18:59:02] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-14 18:59:03] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-14 18:59:15] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-14 18:59:15] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-14 18:59:18] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-14 18:59:19] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-14 18:59:19] SUCCESS: Steam Bot Logged In Completely!

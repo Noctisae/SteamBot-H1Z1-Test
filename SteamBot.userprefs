@@ -1,15 +1,8 @@
 ﻿<Properties StartupItem="SteamBot/ExampleBot.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SteamTrade\TradeOffer\TradeOffer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SteamBot/DepositTradeOfferUserHandler.cs">
     <Files>
-      <File FileName="SteamBot\DepositTradeOfferUserHandler.cs" Line="751" Column="34" />
-      <File FileName="SteamBot\Bot.cs" Line="185" Column="16" />
-      <File FileName="SteamBot\UserHandler.cs" Line="1" Column="1" />
-      <File FileName="SteamBot\SimpleUserHandler.cs" Line="1" Column="1" />
-      <File FileName="SteamBot\BotManagerInterpreter.cs" Line="172" Column="22" />
-      <File FileName="SteamTrade\TradeOffer\TradeOfferManager.cs" Line="121" Column="49" />
-      <File FileName="SteamBot\Configuration.cs" Line="153" Column="52" />
-      <File FileName="SteamTrade\TradeOffer\TradeOffer.cs" Line="279" Column="60" />
+      <File FileName="SteamBot/DepositTradeOfferUserHandler.cs" Line="513" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
