@@ -766,3 +766,15 @@
 [H1Z1ExBot 2016-03-14 18:59:18] INFO: Downloading Schema...
 [H1Z1ExBot 2016-03-14 18:59:19] SUCCESS: Schema Downloaded!
 [H1Z1ExBot 2016-03-14 18:59:19] SUCCESS: Steam Bot Logged In Completely!
+<<<<<<< HEAD
+=======
+[H1Z1ExBot 2016-03-17 22:43:17] INFO: Connecting...
+[H1Z1ExBot 2016-03-17 22:43:17] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-03-17 22:43:24] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-03-17 22:43:25] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-03-17 22:43:29] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-03-17 22:43:29] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-03-17 22:43:30] INFO: Downloading Schema...
+[H1Z1ExBot 2016-03-17 22:43:30] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-03-17 22:43:30] SUCCESS: Steam Bot Logged In Completely!
+>>>>>>> 328cd8930055e07f27e20f1294f84be0f4afc9cc
