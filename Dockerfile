@@ -7,3 +7,4 @@ WORKDIR Bin/Debug
 CMD ["mono", "SteamBot.exe"]
 
 EXPOSE 80
+EXPOSE 443
