@@ -500,7 +500,6 @@ namespace SteamBot
 					var data           = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
 
 					foreach( var exchange in data.data){
-
 						var TradeOffer = Bot.NewTradeOffer(new SteamID(exchange.steamid));
 
 						foreach( var obj in exchange.objects ) {
