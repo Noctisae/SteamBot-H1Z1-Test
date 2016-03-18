@@ -1,9 +1,0 @@
-[Unit]
-Description=launch my steambot
-
-[Service]
-ExecStart=/bin/mono /srv/Steam\ Bot/Bin/Debug/SteamBot.exe
-
-[Install]
-WantedBy=multi-user.target
-
