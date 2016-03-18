@@ -2,9 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SteamBot\DepositTradeOfferUserHandler.cs">
     <Files>
-      <File FileName="SteamBot\DepositTradeOfferUserHandler.cs" Line="502" Column="42" />
-      <File FileName="SteamBot\Bot.cs" Line="61" Column="25" />
-      <File FileName="SteamBot\Configuration.cs" Line="159" Column="15" />
+      <File FileName="SteamBot\DepositTradeOfferUserHandler.cs" Line="503" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

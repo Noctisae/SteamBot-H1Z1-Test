@@ -50,7 +50,7 @@ namespace SteamBot
         // This mode is to run a single Bot until it's terminated.
         private static void BotMode(int botIndex)
         {
-            if (!File.Exists("settings.json"))
+            if (!File.Exists("./settings.json"))
             {
                 Console.WriteLine("No settings.json file found.");
                 return;
@@ -59,7 +59,7 @@ namespace SteamBot
             Configuration configObject;
             try
             {
-                configObject = Configuration.LoadConfiguration("settings.json");
+                configObject = Configuration.LoadConfiguration("./settings.json");
             }
             catch (Newtonsoft.Json.JsonReaderException)
             {

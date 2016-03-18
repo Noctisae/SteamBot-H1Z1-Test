@@ -3,6 +3,6 @@
 /home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/SteamTrade.dll
 /home/florentin/Projects/Steam Bot/SteamTrade/obj/Debug/SteamTrade.dll
 /home/florentin/Projects/Steam Bot/SteamTrade/obj/Debug/SteamTrade.dll.mdb
-/home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/Newtonsoft.Json.dll
 /home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/protobuf-net.dll
 /home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/SteamKit2.dll
+/home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/Newtonsoft.Json.dll
