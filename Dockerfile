@@ -2,7 +2,7 @@ FROM mono:latest
 
 COPY . .
 
-WORDIR Bin/Debug
+WORKDIR Bin/Debug
 
 CMD ["mono", "SteamBot.exe"]
 
