@@ -1,0 +1,6 @@
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\Bin\Release\SteamBot.exe.config
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\Bin\Release\SteamBot.exe
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\Bin\Release\SteamBot.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamBot\obj\Release\ExampleBot.csprojResolveAssemblyReference.cache
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamBot\obj\Release\SteamBot.exe
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamBot\obj\Release\SteamBot.pdb

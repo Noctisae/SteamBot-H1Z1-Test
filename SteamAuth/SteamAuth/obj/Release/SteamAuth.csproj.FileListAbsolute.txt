@@ -1,0 +1,6 @@
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamAuth\SteamAuth\bin\Release\SteamAuth.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamAuth\SteamAuth\bin\Release\SteamAuth.pdb
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamAuth\SteamAuth\bin\Release\Newtonsoft.Json.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamAuth\SteamAuth\bin\Release\Newtonsoft.Json.xml
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamAuth\SteamAuth\obj\Release\SteamAuth.dll
+F:\wamp64\www\SiteCapisenH1Z1Bet\SteamBot-H1Z1-Test\SteamAuth\SteamAuth\obj\Release\SteamAuth.pdb
