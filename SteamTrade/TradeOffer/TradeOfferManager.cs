@@ -40,6 +40,7 @@ namespace SteamTrade.TradeOffer
             if (offers != null && offers.TradeOffersReceived != null)
             {
                 Console.WriteLine("Des offres nous attendent !");
+				Console.WriteLine (offers.TradeOffersReceived);
                 foreach (var offer in offers.TradeOffersReceived)
                 {
 					Console.WriteLine("Wesh gros, on est dans le foreach");
