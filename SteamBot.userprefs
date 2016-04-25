@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="SteamBot\ExampleBot.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SteamAuth\SteamAuth\UserLogin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SteamBot\DepositTradeOfferUserHandler.cs">
     <Files>
-      <File FileName="SteamBot\DepositTradeOfferUserHandler.cs" Line="197" Column="24" />
+      <File FileName="SteamBot\DepositTradeOfferUserHandler.cs" Line="197" Column="6" />
       <File FileName="SteamBot\TradeOfferUserHandler.cs" Line="1" Column="1" />
       <File FileName="SteamBot\TF2GC\Items.cs" Line="1" Column="1" />
       <File FileName="SteamTrade\Trade.cs" Line="1" Column="1" />
