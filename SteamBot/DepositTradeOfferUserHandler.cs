@@ -248,9 +248,9 @@ namespace SteamBot
 			using (var stream = request.GetRequestStream ()) {
 				stream.Write (post, 0, post.Length);
 			}
-
+			Console.WriteLine ("Wesh gros, on deserialize");
 			var response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
-
+			Console.WriteLine ("Wesh gros, on a réussi à deserializer");
 			doWebWithCatch (1, () => {
 				if (response.success) {
 					Log.Success ("Deposit");
