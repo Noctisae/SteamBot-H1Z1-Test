@@ -249,7 +249,15 @@ namespace SteamBot
 				stream.Write (post, 0, post.Length);
 			}
 			Console.WriteLine ("Wesh gros, on deserialize");
-			var response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
+			JSONBasicResponse response = new JSONBasicResponse();
+			try{
+				response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
+			}
+			catch(JsonReaderException e){
+				Console.WriteLine (e.ToString());
+				Console.WriteLine (e.Data);
+				Console.WriteLine (e.GetType());
+			}
 			Console.WriteLine ("Wesh gros, on a réussi à deserializer");
 			doWebWithCatch (1, () => {
 				if (response.success) {
