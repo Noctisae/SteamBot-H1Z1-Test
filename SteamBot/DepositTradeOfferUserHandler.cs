@@ -508,8 +508,16 @@ namespace SteamBot
 				while( true ) {
 					var res 		   = SteamWeb.Request( url, "GET" );
 					var withdrawString = new StreamReader( res.GetResponseStream()).ReadToEnd();
-					var data           = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
-
+					ExchangeDataList data = new ExchangeDataList();
+					try{
+						data = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
+					}
+					catch(JsonReaderException e){
+						Console.WriteLine(data.ToString());
+						Console.WriteLine (e.ToString());
+						Console.WriteLine (e.Data);
+						Console.WriteLine (e.GetType());
+					}
 					foreach( var exchange in data.data ) {
 						var TradeOffer = Bot.NewTradeOffer( new SteamID( exchange.steamid ));
 
