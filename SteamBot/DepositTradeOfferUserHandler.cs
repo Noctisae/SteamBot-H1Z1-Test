@@ -252,7 +252,6 @@ namespace SteamBot
 			doWebWithCatch (1, () => {
 				Console.WriteLine ("Wesh gros, on deserialize");
 				try{
-					Console.WriteLine(new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
 					var response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
 
 					if (response.success) {
