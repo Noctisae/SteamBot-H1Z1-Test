@@ -4,3 +4,5 @@
 /home/florentin/Projects/Steam Bot/SteamAuth/SteamAuth/obj/Debug/SteamAuth.dll
 /home/florentin/Projects/Steam Bot/SteamAuth/SteamAuth/obj/Debug/SteamAuth.dll.mdb
 /home/florentin/Projects/Steam Bot/SteamAuth/SteamAuth/bin/Debug/Newtonsoft.Json.dll
+/home/florentin/Projects/Steam Bot/SteamAuth/SteamAuth/bin/Debug/SteamAuth.pdb
+/home/florentin/Projects/Steam Bot/SteamAuth/SteamAuth/obj/Debug/SteamAuth.pdb

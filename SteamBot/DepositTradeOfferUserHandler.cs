@@ -251,6 +251,7 @@ namespace SteamBot
 			Console.WriteLine ("Wesh gros, on deserialize");
 			JSONBasicResponse response = new JSONBasicResponse();
 			try{
+				Console.WriteLine(request.GetResponse ().ToString());
 				response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
 			}
 			catch(JsonReaderException e){

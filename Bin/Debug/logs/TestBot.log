@@ -778,6 +778,10 @@
 [H1Z1ExBot 2016-03-17 22:43:30] SUCCESS: Schema Downloaded!
 [H1Z1ExBot 2016-03-17 22:43:30] SUCCESS: Steam Bot Logged In Completely!
 >>>>>>> 328cd8930055e07f27e20f1294f84be0f4afc9cc
+<<<<<<< HEAD
+[H1Z1ExBot 2016-04-28 18:53:56] INFO: Connecting...
+[H1Z1ExBot 2016-04-28 18:53:56] SUCCESS: Done Loading Bot!
+=======
 [H1Z1ExBot 2016-04-28 18:22:40] INFO: Connecting...
 [H1Z1ExBot 2016-04-28 18:22:40] SUCCESS: Done Loading Bot!
 [H1Z1ExBot 2016-04-28 18:22:51] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
@@ -815,6 +819,7 @@
 [H1Z1ExBot 2016-04-28 18:56:55] SUCCESS: Schema Downloaded!
 [H1Z1ExBot 2016-04-28 18:56:55] SUCCESS: Steam Bot Logged In Completely!
 [H1Z1ExBot 2016-04-28 18:56:55] INFO: TradeOffer notification
+<<<<<<< HEAD
 [H1Z1ExBot 2016-05-02 13:18:36] INFO: Connecting...
 [H1Z1ExBot 2016-05-02 13:18:36] SUCCESS: Done Loading Bot!
 [H1Z1ExBot 2016-05-02 13:18:42] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
@@ -846,3 +851,19 @@
 [H1Z1ExBot 2016-05-02 14:55:41] INFO: Offer accepted, try treatment Store
 [H1Z1ExBot 2016-05-02 14:55:42] ERROR: Deposit
 [H1Z1ExBot 2016-05-02 14:55:43] SUCCESS: Decline offer, cannot deposit
+=======
+>>>>>>> ab5eff4070dfede1ea03e31dbc6d355b7728736a
+>>>>>>> 1c324fe949a97c97e6b650ed6ca67f8a88017f1d
+[H1Z1ExBot 2016-05-02 15:02:54] INFO: Connecting...
+[H1Z1ExBot 2016-05-02 15:02:54] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-05-02 15:02:55] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-05-02 15:02:56] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-05-02 15:03:00] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-05-02 15:03:00] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-05-02 15:03:01] INFO: Downloading Schema...
+[H1Z1ExBot 2016-05-02 15:03:01] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-05-02 15:03:01] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-05-02 15:03:39] INFO: TradeOffer notification
+[H1Z1ExBot 2016-05-02 15:03:43] INFO: Offer accepted, try treatment Store
+[H1Z1ExBot 2016-05-02 15:03:44] ERROR: Deposit
+[H1Z1ExBot 2016-05-02 15:03:45] SUCCESS: Decline offer, cannot deposit

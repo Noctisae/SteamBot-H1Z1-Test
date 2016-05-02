@@ -1,5 +1,8 @@
-﻿<Properties StartupItem="SteamBot\ExampleBot.csproj">
+﻿<Properties StartupItem="SteamBot/ExampleBot.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workbench />
+=======
   <MonoDevelop.Ide.Workbench ActiveDocument="SteamBot\DepositTradeOfferUserHandler.cs">
     <Files>
       <File FileName="SteamBot\DepositTradeOfferUserHandler.cs" Line="503" Column="3" />
@@ -16,6 +19,7 @@
       <File FileName="SteamBot\Bot.cs" Line="90" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+>>>>>>> ab5eff4070dfede1ea03e31dbc6d355b7728736a
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
