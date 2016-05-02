@@ -261,6 +261,7 @@ namespace SteamBot
 				Console.WriteLine (e.GetType());
 			}
 			Console.WriteLine ("Wesh gros, on a réussi à deserializer");
+			Console.WriteLine(response.ToString());
 			doWebWithCatch (1, () => {
 				if (response.success) {
 					Console.WriteLine ("Deposit");
