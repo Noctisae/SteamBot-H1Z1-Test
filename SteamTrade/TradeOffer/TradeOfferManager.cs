@@ -40,24 +40,32 @@ namespace SteamTrade.TradeOffer
             if (offers != null && offers.TradeOffersReceived != null)
             {
                 Console.WriteLine("Des offres nous attendent !");
+				Console.WriteLine("Wesh gros, on continue");
+				Console.WriteLine (offers.TradeOffersReceived);
                 foreach (var offer in offers.TradeOffersReceived)
                 {
+					Console.WriteLine("Wesh gros, on est dans le foreach");
                     if (offer.TradeOfferState == TradeOfferState.TradeOfferStateActive && !tradeOfferHistory.Contains(offer.TradeOfferId))
                     {
+						Console.WriteLine("On passe le premier if intergalactique");
                         //make sure the api loaded correctly sometimes the items are missing
                         if (IsOfferValid(offer))
                         {
+							Console.WriteLine("Second if intergalactique !, on envoie l'offre au Handler");
                             SendOfferToHandler(offer);
                         }
                         else
                         {
+							Console.WriteLine("Offre non valide, on essaie de récup l'ID");
                             var resp = webApi.GetTradeOffer(offer.TradeOfferId);
                             if (IsOfferValid(resp.Offer))
                             {
+								Console.WriteLine("On a récupéré l'id, on renvoie l'offre");
                                 SendOfferToHandler(resp.Offer);
                             }
                             else
                             {
+								Console.WriteLine("Tout a foiré, t'as chié dans la colle");
                                 //todo: log steam api is giving us invalid offers.
                                 Debug.WriteLine("Offer returned from steam api is not valid : " + resp.Offer.TradeOfferId);
                             }

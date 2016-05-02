@@ -4,3 +4,5 @@
 /home/florentin/Projects/Steam Bot/Bin/Debug/SteamBot.exe
 /home/florentin/Projects/Steam Bot/SteamBot/obj/Debug/SteamBot.exe
 /home/florentin/Projects/Steam Bot/SteamBot/obj/Debug/SteamBot.exe.mdb
+/home/florentin/Projects/Steam Bot/Bin/Debug/SteamBot.pdb
+/home/florentin/Projects/Steam Bot/SteamBot/obj/Debug/SteamBot.pdb

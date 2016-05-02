@@ -191,14 +191,17 @@ namespace SteamBot
 				decline = true;
 			}
 
-			// check if all items is for h1z1
-			foreach( var item in offer.Items.GetTheirItems()) {
-				if( item.AppId != 295110 && item.AppId != 430850 ) {
-					Log.Error( "Offer declined because one or more items was not for H1Z1." );
+			// check if all items is for h1z1, except if the partner is an admin
+			if (!IsAdmin) {
+				foreach( var item in offer.Items.GetTheirItems()) {
+					if( item.AppId != 295110 && item.AppId != 430850 ) {
+						Log.Error( "Offer declined because one or more items was not for H1Z1." );
 
-					decline = true;
+						decline = true;
+					}
 				}
 			}
+
 
 			/* check if there are more than 10 items in the trade
 			var max = 10;
@@ -245,9 +248,19 @@ namespace SteamBot
 			using (var stream = request.GetRequestStream ()) {
 				stream.Write (post, 0, post.Length);
 			}
-
-			var response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
-
+			Console.WriteLine ("Wesh gros, on deserialize");
+			JSONBasicResponse response = new JSONBasicResponse();
+			try{
+				Console.WriteLine(request.GetResponse ().ToString());
+				response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
+			}
+			catch(JsonReaderException e){
+				Console.WriteLine(response);
+				Console.WriteLine (e.ToString());
+				Console.WriteLine (e.Data);
+				Console.WriteLine (e.GetType());
+			}
+			Console.WriteLine ("Wesh gros, on a réussi à deserializer");
 			doWebWithCatch (1, () => {
 				if (response.success) {
 					Log.Success ("Deposit");
@@ -496,8 +509,16 @@ namespace SteamBot
 				while( true ) {
 					var res 		   = SteamWeb.Request( url, "GET" );
 					var withdrawString = new StreamReader( res.GetResponseStream()).ReadToEnd();
-					var data           = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
-
+					ExchangeDataList data = new ExchangeDataList();
+					try{
+						data = JsonConvert.DeserializeObject<ExchangeDataList>( withdrawString );
+					}
+					catch(JsonReaderException e){
+						Console.WriteLine(data.ToString());
+						Console.WriteLine (e.ToString());
+						Console.WriteLine (e.Data);
+						Console.WriteLine (e.GetType());
+					}
 					foreach( var exchange in data.data ) {
 						var TradeOffer = Bot.NewTradeOffer( new SteamID( exchange.steamid ));
 
