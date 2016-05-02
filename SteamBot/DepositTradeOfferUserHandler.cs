@@ -263,20 +263,20 @@ namespace SteamBot
 			Console.WriteLine ("Wesh gros, on a réussi à deserializer");
 			doWebWithCatch (1, () => {
 				if (response.success) {
-					Log.Success ("Deposit");
+					Console.WriteLine ("Deposit");
 
 					if (offer.Accept ()) {
-						Log.Success ("Offer accepted");
+						Console.WriteLine ("Offer accepted");
 					} else {
-						Log.Error ("Offer accepted");
+						Console.WriteLine ("Offer accepted");
 					}
 				} else {
-					Log.Error ("Deposit");
+					Console.WriteLine ("Deposit");
 				
 					if (offer.Decline ()) {
-						Log.Success ("Decline offer, cannot deposit");
+						Console.WriteLine ("Decline offer, cannot deposit");
 					} else {
-						Log.Error ("Decline offer, cannot deposit");
+						Console.WriteLine ("Decline offer, cannot deposit");
 					}
 				}	
 			});
