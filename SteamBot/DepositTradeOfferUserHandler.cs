@@ -253,6 +253,7 @@ namespace SteamBot
 				Console.WriteLine ("Wesh gros, on deserialize");
 				try{
 					var response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
+					Console.WriteLine( "On n'arrive jamais ici" );
 
 					if (response.success) {
 						Console.WriteLine ("Deposit");
