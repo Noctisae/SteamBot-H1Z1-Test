@@ -255,7 +255,7 @@ namespace SteamBot
 				response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse ().GetResponseStream ()).ReadToEnd ());
 			}
 			catch(JsonReaderException e){
-				Console.WriteLine(response);
+				Console.WriteLine(response.ToString());
 				Console.WriteLine (e.ToString());
 				Console.WriteLine (e.Data);
 				Console.WriteLine (e.GetType());
@@ -582,6 +582,7 @@ namespace SteamBot
 
 	public class JSONBasicResponse {
 		public bool success;
+		public string ToString(){ return success.ToString();}
 	}
 
     public class Data

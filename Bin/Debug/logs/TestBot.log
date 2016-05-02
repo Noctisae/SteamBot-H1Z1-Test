@@ -778,5 +778,45 @@
 [H1Z1ExBot 2016-03-17 22:43:30] SUCCESS: Schema Downloaded!
 [H1Z1ExBot 2016-03-17 22:43:30] SUCCESS: Steam Bot Logged In Completely!
 >>>>>>> 328cd8930055e07f27e20f1294f84be0f4afc9cc
+<<<<<<< HEAD
 [H1Z1ExBot 2016-04-28 18:53:56] INFO: Connecting...
 [H1Z1ExBot 2016-04-28 18:53:56] SUCCESS: Done Loading Bot!
+=======
+[H1Z1ExBot 2016-04-28 18:22:40] INFO: Connecting...
+[H1Z1ExBot 2016-04-28 18:22:40] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-04-28 18:22:51] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-04-28 18:22:52] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-04-28 18:22:56] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-04-28 18:22:56] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-04-28 18:22:59] INFO: Offer accepted, try treatment Store
+[H1Z1ExBot 2016-04-28 18:22:59] ERROR: URI: unknown >> System.Net.WebException: Error: ConnectFailure (Connection refused) ---> System.Net.Sockets.SocketException: Connection refused
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) <0x416aa420 + 0x001b3> in <filename unknown>:0 
+  at System.Net.WebConnection.Connect (System.Net.HttpWebRequest request) <0x416a8f20 + 0x005c7> in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at System.Net.HttpWebRequest.EndGetRequestStream (IAsyncResult asyncResult) <0x416e62b0 + 0x0013f> in <filename unknown>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () <0x416a3d50 + 0x000f4> in <filename unknown>:0 
+  at SteamBot.DepositTradeOfferUserHandler.OnNewTradeOffer (SteamTrade.TradeOffer.TradeOffer offer) <0x417b0020 + 0x008f1> in <filename unknown>:0 
+  at SteamBot.Bot.TradeOfferRouter (SteamTrade.TradeOffer.TradeOffer offer) <0x417af690 + 0x0004a> in <filename unknown>:0 
+  at SteamTrade.TradeOffer.TradeOfferManager.SendOfferToHandler (SteamTrade.TradeOffer.Offer offer) <0x417ae180 + 0x00087> in <filename unknown>:0 
+  at SteamTrade.TradeOffer.TradeOfferManager.GetActiveTradeOffers () <0x417a3510 + 0x001db> in <filename unknown>:0 
+  at SteamTrade.TradeOffer.TradeOfferManager.GetOffers () <0x417a3440 + 0x00067> in <filename unknown>:0 
+  at SteamBot.Bot.UserWebLogOn () <0x41704b70 + 0x003a7> in <filename unknown>:0 
+  at SteamBot.Bot.<HandleSteamMessage>b__81_2 (SteamKit2.LoginKeyCallback callback) <0x41704820 + 0x0007f> in <filename unknown>:0 
+  at SteamKit2.CallbackMsgExtensions.Handle[T] (ICallbackMsg msg, System.Action`1 handler) <0x41663660 + 0x00092> in <filename unknown>:0 
+  at SteamBot.Bot.HandleSteamMessage (ICallbackMsg msg) <0x41662a80 + 0x0020b> in <filename unknown>:0 
+  at SteamBot.Bot.BackgroundWorkerOnDoWork (System.Object sender, System.ComponentModel.DoWorkEventArgs doWorkEventArgs) <0x416561a0 + 0x0007b> in <filename unknown>:0 
+[H1Z1ExBot 2016-04-28 18:23:44] INFO: TradeOffer notification
+[H1Z1ExBot 2016-04-28 18:56:43] INFO: Connecting...
+[H1Z1ExBot 2016-04-28 18:56:43] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-04-28 18:56:44] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-04-28 18:56:45] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-04-28 18:56:49] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-04-28 18:56:49] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-04-28 18:56:52] INFO: Offer accepted, try treatment Store
+[H1Z1ExBot 2016-04-28 18:56:53] ERROR: Deposit
+[H1Z1ExBot 2016-04-28 18:56:54] SUCCESS: Decline offer, cannot deposit
+[H1Z1ExBot 2016-04-28 18:56:54] INFO: Downloading Schema...
+[H1Z1ExBot 2016-04-28 18:56:55] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-04-28 18:56:55] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-04-28 18:56:55] INFO: TradeOffer notification
+>>>>>>> ab5eff4070dfede1ea03e31dbc6d355b7728736a
