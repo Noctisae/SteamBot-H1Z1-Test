@@ -248,38 +248,38 @@ namespace SteamBot
 			using (var stream = request.GetRequestStream ()) {
 				stream.Write (post, 0, post.Length);
 			}
-			Console.WriteLine ("Wesh gros, on deserialize");
-			JSONBasicResponse response = new JSONBasicResponse();
-			try{
-				Console.WriteLine(new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
-				response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
-			}
-			catch(JsonReaderException e){
-				Console.WriteLine(response.ToString());
-				Console.WriteLine (e.ToString());
-				Console.WriteLine (e.Data);
-				Console.WriteLine (e.GetType());
-			}
-			Console.WriteLine ("Wesh gros, on a réussi à deserializer");
-			Console.WriteLine(response.ToString());
-			doWebWithCatch (1, () => {
-				if (response.success) {
-					Console.WriteLine ("Deposit");
 
-					if (offer.Accept ()) {
-						Console.WriteLine ("Offer accepted");
+			doWebWithCatch (1, () => {
+				Console.WriteLine ("Wesh gros, on deserialize");
+				JSONBasicResponse response = new JSONBasicResponse();
+				try{
+					Console.WriteLine(new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
+					response = JsonConvert.DeserializeObject<JSONBasicResponse> (new StreamReader (request.GetResponse().GetResponseStream ()).ReadToEnd());
+
+					if (response.success) {
+						Console.WriteLine ("Deposit");
+
+						if (offer.Accept ()) {
+							Console.WriteLine ("Offer accepted");
+						} else {
+							Console.WriteLine ("Offer accepted");
+						}
 					} else {
-						Console.WriteLine ("Offer accepted");
+						Console.WriteLine ("Deposit");
+
+						if (offer.Decline ()) {
+							Console.WriteLine ("Decline offer, cannot deposit");
+						} else {
+							Console.WriteLine ("Decline offer, cannot deposit");
+						}
 					}
-				} else {
-					Console.WriteLine ("Deposit");
-				
-					if (offer.Decline ()) {
-						Console.WriteLine ("Decline offer, cannot deposit");
-					} else {
-						Console.WriteLine ("Decline offer, cannot deposit");
-					}
-				}	
+				}
+				catch(JsonReaderException e){
+					Console.WriteLine (e.ToString());
+					Console.WriteLine (e.Data);
+					Console.WriteLine (e.GetType());
+				}
+				Console.WriteLine ("Wesh gros, on a réussi à deserializer");
 			});
 			
 		}
