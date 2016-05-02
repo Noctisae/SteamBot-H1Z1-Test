@@ -815,3 +815,34 @@
 [H1Z1ExBot 2016-04-28 18:56:55] SUCCESS: Schema Downloaded!
 [H1Z1ExBot 2016-04-28 18:56:55] SUCCESS: Steam Bot Logged In Completely!
 [H1Z1ExBot 2016-04-28 18:56:55] INFO: TradeOffer notification
+[H1Z1ExBot 2016-05-02 13:18:36] INFO: Connecting...
+[H1Z1ExBot 2016-05-02 13:18:36] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-05-02 13:18:42] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-05-02 13:18:43] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-05-02 13:18:47] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-05-02 13:18:47] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-05-02 13:18:48] INFO: Downloading Schema...
+[H1Z1ExBot 2016-05-02 13:18:48] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-05-02 13:18:48] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-05-02 13:20:53] INFO: Connecting...
+[H1Z1ExBot 2016-05-02 13:20:53] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-05-02 13:20:59] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-05-02 13:21:00] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-05-02 13:21:05] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-05-02 13:21:05] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-05-02 13:21:06] INFO: Downloading Schema...
+[H1Z1ExBot 2016-05-02 13:21:06] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-05-02 13:21:06] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-05-02 14:54:02] INFO: Connecting...
+[H1Z1ExBot 2016-05-02 14:54:02] SUCCESS: Done Loading Bot!
+[H1Z1ExBot 2016-05-02 14:54:03] ERROR: Login Error: AccountLogonDeniedNeedTwoFactorCode
+[H1Z1ExBot 2016-05-02 14:54:04] SUCCESS: Generated 2FA code.
+[H1Z1ExBot 2016-05-02 14:54:12] SUCCESS: User Authenticated!
+[H1Z1ExBot 2016-05-02 14:54:12] SUCCESS: Checking Trade Offers received while offline...
+[H1Z1ExBot 2016-05-02 14:54:13] INFO: Downloading Schema...
+[H1Z1ExBot 2016-05-02 14:54:13] SUCCESS: Schema Downloaded!
+[H1Z1ExBot 2016-05-02 14:54:13] SUCCESS: Steam Bot Logged In Completely!
+[H1Z1ExBot 2016-05-02 14:55:36] INFO: TradeOffer notification
+[H1Z1ExBot 2016-05-02 14:55:41] INFO: Offer accepted, try treatment Store
+[H1Z1ExBot 2016-05-02 14:55:42] ERROR: Deposit
+[H1Z1ExBot 2016-05-02 14:55:43] SUCCESS: Decline offer, cannot deposit
