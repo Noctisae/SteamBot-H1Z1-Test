@@ -1,0 +1,10 @@
+/home/florentin/Projects/bot/SteamTrade/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/florentin/Projects/bot/SteamTrade/bin/Release/SteamTrade.dll.mdb
+/home/florentin/Projects/bot/SteamTrade/bin/Release/SteamTrade.pdb
+/home/florentin/Projects/bot/SteamTrade/bin/Release/SteamTrade.dll
+/home/florentin/Projects/bot/SteamTrade/obj/Release/SteamTrade.dll
+/home/florentin/Projects/bot/SteamTrade/obj/Release/SteamTrade.dll.mdb
+/home/florentin/Projects/bot/SteamTrade/obj/Release/SteamTrade.pdb
+/home/florentin/Projects/bot/SteamTrade/bin/Release/protobuf-net.dll
+/home/florentin/Projects/bot/SteamTrade/bin/Release/SteamKit2.dll
+/home/florentin/Projects/bot/SteamTrade/bin/Release/Newtonsoft.Json.dll

@@ -1,0 +1,8 @@
+/home/florentin/Projects/bot/SteamBot/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/florentin/Projects/bot/Bin/Release/SteamBot.exe.config
+/home/florentin/Projects/bot/Bin/Release/SteamBot.exe.mdb
+/home/florentin/Projects/bot/Bin/Release/SteamBot.pdb
+/home/florentin/Projects/bot/Bin/Release/SteamBot.exe
+/home/florentin/Projects/bot/SteamBot/obj/Release/SteamBot.exe
+/home/florentin/Projects/bot/SteamBot/obj/Release/SteamBot.exe.mdb
+/home/florentin/Projects/bot/SteamBot/obj/Release/SteamBot.pdb

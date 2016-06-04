@@ -1,0 +1,8 @@
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/bin/Release/SteamAuth.dll.mdb
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/bin/Release/SteamAuth.pdb
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/bin/Release/SteamAuth.dll
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/obj/Release/SteamAuth.dll
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/obj/Release/SteamAuth.dll.mdb
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/obj/Release/SteamAuth.pdb
+/home/florentin/Projects/bot/SteamAuth/SteamAuth/bin/Release/Newtonsoft.Json.dll

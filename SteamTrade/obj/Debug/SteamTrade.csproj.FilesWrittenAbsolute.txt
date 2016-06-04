@@ -8,3 +8,13 @@
 /home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/Newtonsoft.Json.dll
 /home/florentin/Projects/Steam Bot/SteamTrade/bin/Debug/SteamTrade.pdb
 /home/florentin/Projects/Steam Bot/SteamTrade/obj/Debug/SteamTrade.pdb
+/home/florentin/Projects/bot/SteamTrade/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/florentin/Projects/bot/SteamTrade/bin/Debug/SteamTrade.dll.mdb
+/home/florentin/Projects/bot/SteamTrade/bin/Debug/SteamTrade.pdb
+/home/florentin/Projects/bot/SteamTrade/bin/Debug/SteamTrade.dll
+/home/florentin/Projects/bot/SteamTrade/obj/Debug/SteamTrade.dll
+/home/florentin/Projects/bot/SteamTrade/obj/Debug/SteamTrade.dll.mdb
+/home/florentin/Projects/bot/SteamTrade/obj/Debug/SteamTrade.pdb
+/home/florentin/Projects/bot/SteamTrade/bin/Debug/protobuf-net.dll
+/home/florentin/Projects/bot/SteamTrade/bin/Debug/SteamKit2.dll
+/home/florentin/Projects/bot/SteamTrade/bin/Debug/Newtonsoft.Json.dll

@@ -6,3 +6,11 @@
 /home/florentin/Projects/Steam Bot/SteamBot/obj/Debug/SteamBot.exe.mdb
 /home/florentin/Projects/Steam Bot/Bin/Debug/SteamBot.pdb
 /home/florentin/Projects/Steam Bot/SteamBot/obj/Debug/SteamBot.pdb
+/home/florentin/Projects/bot/SteamBot/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/florentin/Projects/bot/Bin/Debug/SteamBot.exe.config
+/home/florentin/Projects/bot/Bin/Debug/SteamBot.exe.mdb
+/home/florentin/Projects/bot/Bin/Debug/SteamBot.pdb
+/home/florentin/Projects/bot/Bin/Debug/SteamBot.exe
+/home/florentin/Projects/bot/SteamBot/obj/Debug/SteamBot.exe
+/home/florentin/Projects/bot/SteamBot/obj/Debug/SteamBot.exe.mdb
+/home/florentin/Projects/bot/SteamBot/obj/Debug/SteamBot.pdb

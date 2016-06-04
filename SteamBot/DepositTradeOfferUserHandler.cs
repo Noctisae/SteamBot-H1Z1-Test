@@ -194,8 +194,8 @@ namespace SteamBot
 			// check if all items is for h1z1, except if the partner is an admin
 			if (!IsAdmin) {
 				foreach( var item in offer.Items.GetTheirItems()) {
-					if( item.AppId != 295110 && item.AppId != 430850 ) {
-						Log.Error( "Offer declined because one or more items was not for H1Z1." );
+					if( item.AppId != 295110 && item.AppId != 430850 && item.AppId != 730 ) {
+						Log.Error( "Offer declined because one or more items was not for H1Z1 or CSGO." );
 
 						decline = true;
 					}
